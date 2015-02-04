@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+    body
+        block header
+            div.btn-group(role="group")
+                button.btn.btn-default(type='button') Distance sensor
+                button.btn.btn-default(type='button') NES controller
+                button.btn.btn-default(type='button') Light sensor
+        block content
+            shorttext= shorttext
+            longtext= longtext
